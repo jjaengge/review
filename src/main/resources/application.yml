@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active: local
+
+---
+spring:
+  profiles: local
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    jdbc-url: jdbc:mysql://127.0.0.1:3306/review?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: trip
+    password: trip
+    initial-size: 8
+    max-active: 20
+    max-idle: 8
+    min-idle: 5
+    test-on-borrow: true
+    validation-query: SELECT 1
+    test-while-idle: true
+    time-between-eviction-runs-millis: 3600000
+    min-evictable-idle-time-millis: 7200000
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show: true
+
+server:
+  port: 18080
+
+threadService:
+  pointAudit: true
