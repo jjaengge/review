@@ -13,8 +13,11 @@ cd review
 mvn clean; mvn install -DskipTests
 java -Dspring.profiles.active=local -jar review-1.0-SNAPSHOT.jar
 ```
+
 ## Test
 
+```
 http://localhost:18080/swagger-ui.html
+```
 
 
