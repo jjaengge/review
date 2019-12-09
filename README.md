@@ -1,6 +1,6 @@
 ## Building
 
-Prerequisites for building Flink:
+Prerequisites for building Review:
 
 * git
 * Maven
